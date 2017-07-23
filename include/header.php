@@ -5,12 +5,19 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
 <?php
+    // Returns abcd for the url as http://localhost/Saathi/abcd, where localhost can be any hostname like students.iitm.ac.in
     $currpage = (explode("/Saathi/", $_SERVER['REQUEST_URI'])[1]);
-    // echo(explode("/Saathi/", $_SERVER['REQUEST_URI'])[1]=='contact');
+    // Returns http://localhost/Saathi/ or http://students.iitm.ac.in/Saathi/
+    $rooturi = $_SERVER['SERVER_NAME'].'/Saathi/';
+
+    // Append here a list of allowed pages
+    $allowedpages = array("", "about", "contact");
+    // Will take you to the welcome page at / if the page is not in the $allowedpages list
+    if(!in_array($currpage, $allowedpages)) header("location: http://".$rooturi);
 ?>
+    <link rel="stylesheet" href="http://<?php echo($rooturi); ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://<?php echo($rooturi); ?>css/style.css">
 </head>
 
 <body>

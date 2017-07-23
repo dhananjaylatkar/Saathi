@@ -1,8 +1,16 @@
+body {
+    /* overflow-y: auto; */
+}
+
+
 /* Remove the navbar's default margin-bottom and rounded borders */
 
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
+    height: 8.3vh;
+    /* position: fixed; */
+    top: 0px;
     /* background-color: rgba(16, 16, 16, 0.7); */
 }
 
@@ -10,7 +18,7 @@
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 
 .row.content {
-    height: 450px
+    height: 90vh;
 }
 
 
@@ -20,6 +28,7 @@
     padding-top: 20px;
     background-color: #f1f1f1;
     height: 100%;
+    /* position: fixed; */
 }
 
 
@@ -32,6 +41,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0px!important;
+    height: 9.5vh;
 }
 
 
@@ -57,4 +67,41 @@ a:active,
 a:visited,
 a:focus {
     text-decoration: none;
+}
+
+.hdr {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.pushbelow {
+    height: 8.7vh;
+}
+
+.scrl {
+    overflow-y: auto;
+    height: 81.5vh;
+    /* background-color: green; */
+}
+
+li.active a {
+    border-radius: 0 0 5px 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
 }

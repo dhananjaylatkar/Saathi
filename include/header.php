@@ -14,10 +14,10 @@
     // Append here a list of allowed pages
     $allowedpages = array("", "about", "contact");
     // Will take you to the welcome page at / if the page is not in the $allowedpages list
-    if(!in_array($currpage, $allowedpages)) header("location: http://".$rooturi);
+    if(!in_array($currpage, $allowedpages)) header("location: https://".$rooturi);
 ?>
-    <link rel="stylesheet" href="http://<?php echo($rooturi); ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://<?php echo($rooturi); ?>css/style.css">
+    <link rel="stylesheet" href="https://<?php echo($rooturi); ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://<?php echo($rooturi); ?>css/style.css">
 </head>
 
 <body>

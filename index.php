@@ -27,8 +27,8 @@
     </footer>
 
 </body>
-<script src="http://<?php echo($rooturi); ?>js/jquery.min.js"></script>
-<script src="http://<?php echo($rooturi); ?>js/bootstrap.min.js"></script>
+<script src="https://<?php echo($rooturi); ?>js/jquery.min.js"></script>
+<script src="https://<?php echo($rooturi); ?>js/bootstrap.min.js"></script>
 <script>
 // alert("<?php echo(explode("/Saathi",$_SERVER['REQUEST_URI'])[1]); ?>");
 </script>
